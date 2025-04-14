@@ -21,7 +21,7 @@ public class Note {
     private String content;
     private LocalDateTime createdAt;
 
-    public Note() {}
+
 
     @PrePersist
     public void setCreationTimeStamp() {
