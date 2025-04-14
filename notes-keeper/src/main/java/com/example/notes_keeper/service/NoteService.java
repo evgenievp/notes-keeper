@@ -30,6 +30,17 @@ public class NoteService {
     }
 
 
+    public Note addNote(Note note) {
+        return repository.save(note);
+    }
 
+    public List<Note> searchByTitle(String keyword) {
+        return repository.findByTitleContaining(keyword);
+    }
 
+    private NoteDTO mapToDTO(Note note) {
+        return new NoteDTO(note.getId(), note.getTitle(), note.getContent());
+    }
+
+    
 }
