@@ -3,9 +3,11 @@ package com.example.notes_keeper.service;
 import com.example.notes_keeper.dto.NoteDTO;
 import com.example.notes_keeper.models.Note;
 import com.example.notes_keeper.repository.NoteRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class NoteService {
 
     private NoteRepository repository;
@@ -42,5 +44,5 @@ public class NoteService {
         return new NoteDTO(note.getId(), note.getTitle(), note.getContent());
     }
 
-    
+
 }
