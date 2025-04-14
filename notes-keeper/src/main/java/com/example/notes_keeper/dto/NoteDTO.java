@@ -4,10 +4,23 @@ public class NoteDTO {
 
     private String title;
     private String content;
+    private Long id;
 
-    public NoteDTO(String title, String content) {
+    public NoteDTO() {}
+
+    public NoteDTO(Long id, String title, String content) {
+        this.id = id;
         this.title = title;
         this.content = content;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setTitle(String title) {
