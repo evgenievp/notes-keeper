@@ -6,7 +6,7 @@ public class NoteDTO {
     private String content;
     private Long id;
 
-    public NoteDTO() {}
+
 
     public NoteDTO(Long id, String title, String content) {
         this.id = id;

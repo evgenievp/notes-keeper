@@ -16,12 +16,9 @@ public class Note {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String title;
     private String content;
     private LocalDateTime createdAt;
-
-
 
     @PrePersist
     public void setCreationTimeStamp() {
@@ -43,7 +40,6 @@ public class Note {
     public void setContent(String content) {
         this.content = content;
     }
-
 
 
 }

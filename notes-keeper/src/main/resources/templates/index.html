@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note App</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <h1>Note Manager</h1>
+
+  <form id="note-form">
+    <input type="text" id="title" placeholder="Title" required>
+    <textarea id="content" placeholder="Content" required></textarea>
+    <button type="submit">Add Note</button>
+
+    <ul id="note-list"></ul>
+  </form>
+
+  <input type="text" id="search" placeholder="Search by title">
+  <button onclick="searchNotes()">Search</button>
+
+
+
+  <script src="../static/script.js"></script>
+
+
+</body>
+</html>
